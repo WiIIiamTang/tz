@@ -12,7 +12,7 @@
 	let dayjsnow = dayjs();
 	let refreshIntervalTimeMs = 1000;
 
-	$: time = dayjsnow.format('dd MMMM YYYY HH:mm:ss');
+	$: time = dayjsnow.format('DD MMMM YYYY HH:mm:ss');
 
 	onMount(() => {
 		setInterval(() => {
@@ -29,16 +29,16 @@
 			{guess_tz}: {time}
 		</h1>
 		<h1 class="font-bold text-2xl px-4 py-2 w-fit rounded-full">
-			America/Vancouver: {dayjsnow.tz('America/Vancouver').format('dd MMMM YYYY HH:mm:ss')}
+			America/Vancouver: {dayjsnow.tz('America/Vancouver').format('DD MMMM YYYY HH:mm:ss')}
 		</h1>
 		<h1 class="font-bold text-2xl px-4 py-2 w-fit rounded-full">
-			Asia/Kolkata: {dayjsnow.tz('Asia/Kolkata').format('dd MMMM YYYY HH:mm:ss')}
+			Asia/Kolkata: {dayjsnow.tz('Asia/Kolkata').format('DD MMMM YYYY HH:mm:ss')}
 		</h1>
 		<h1 class="font-bold text-2xl px-4 py-2 w-fit rounded-full">
-			Australia/Sydney: {dayjsnow.tz('Australia/Sydney').format('dd MMMM YYYY HH:mm:ss')}
+			Australia/Sydney: {dayjsnow.tz('Australia/Sydney').format('DD MMMM YYYY HH:mm:ss')}
 		</h1>
 		<h1 class="font-bold text-2xl px-4 py-2 w-fit rounded-full">
-			Europe/Dublin: {dayjsnow.tz('Europe/Dublin').format('dd MMMM YYYY HH:mm:ss')}
+			Europe/Dublin: {dayjsnow.tz('Europe/Dublin').format('DD MMMM YYYY HH:mm:ss')}
 		</h1>
 	</div>
 </div>
